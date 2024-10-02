@@ -30,6 +30,8 @@
 /* main section */
 
 .main-card {
+  display: flex;
+  flex-direction: column;
   width: 800px;
   min-height: 490px;
   margin: 0 auto;
@@ -48,4 +50,26 @@
 
 .contact-list-container {
   padding: 0 15px;
+}
+
+.footer-main-card-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  margin-top: auto;
+}
+
+.add-button {
+  border: none;
+  background-color: transparent;
+}
+
+.add-button-icon {
+  font-size: 32pt;
+  color: #5c636a;
+}
+
+.add-button-icon-actions {
+  font-size: 12pt;
+  color: #5c636a;
 }

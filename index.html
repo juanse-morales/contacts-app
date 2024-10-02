@@ -75,7 +75,7 @@
     <div class="main-card">
       <div class="search-form-container">
         <form class="search-form">
-          <input class="form-control" type="text" name="search" id="search-contact" placeholder="Typing filter">
+          <input class="form-control" type="text" name="search" id="search-contact" placeholder="Type filter">
           <button class="btn btn-secondary">Search</button>
         </form>
       </div>
@@ -83,37 +83,69 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">ID</th>
+              <th scope="col">#</th>
               <th scope="col">Name</th>
               <th scope="col">Last name</th>
               <th scope="col">Phone</th>
               <th scope="col">Email</th>
+              <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
+              <th scope="row">1</th>
               <td>María</td>
               <td>Pérez</td>
               <td>310 523 2245</td>
               <td>maria@gmail.com</td>
+              <td>
+                <button class="add-button">
+                  <i class="add-button-icon-actions bi bi-pencil-square"></i>
+                </button>
+                <button class="add-button">
+                  <i class="add-button-icon-actions bi bi-trash3-fill"></i>
+                </button>
+              </td>
             </tr>
             <tr>
-              <td>2</td>
+              <th scope="row">2</th>
               <td>Sara</td>
               <td>Gómez</td>
               <td>315 400 1132</td>
               <td>sara@gmail.com</td>
+              <td>
+                <button class="add-button">
+                  <i class="add-button-icon-actions bi bi-pencil-square"></i>
+                </button>
+                <button class="add-button">
+                  <i class="add-button-icon-actions bi bi-trash3-fill"></i>
+                </button>
+              </td>
             </tr>
             <tr>
-              <td>3</td>
+              <th scope="row">3</th>
               <td>Fernanda</td>
               <td>Contrera</td>
-              <td>301 500 15007</td>
+              <td>301 500 1507</td>
               <td>fernanda@gmail.com</td>
+              <td>
+                <button class="add-button">
+                  <i class="add-button-icon-actions bi bi-pencil-square"></i>
+                </button>
+                <button class="add-button">
+                  <i class="add-button-icon-actions bi bi-trash3-fill"></i>
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
+      </div>
+      <div class="footer-main-card-container">
+        <div class="add-button-container">
+          <button class="add-button">
+            <i class="add-button-icon bi bi-plus-circle-fill"></i>
+          </button>
+        </div>
       </div>
     </div>
 
