@@ -73,3 +73,16 @@
   font-size: 12pt;
   color: #5c636a;
 }
+
+/* Contact Modal */
+
+.contact-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
