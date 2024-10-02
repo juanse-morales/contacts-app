@@ -169,7 +169,7 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Add contact</h1>
@@ -181,7 +181,46 @@
             ></button>
           </div>
           <div class="modal-body">
-            
+            <form>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group mb-3">
+                    <label for="inputName" class="form-label"> Name </label>
+                    <input type="text" class="form-control" id="inputName" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group mb-3">
+                    <label for="inputLastName" class="form-label">
+                      Last name
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputLastName"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group mb-3">
+                    <label for="inputPhone" class="form-label">
+                      Phone number
+                    </label>
+                    <input type="text" class="form-control" id="inputPhone" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group mb-3">
+                    <label for="inputEmail" class="form-label">
+                      Email address
+                    </label>
+                    <input type="email" class="form-control" id="inputEmail" />
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
             <button
