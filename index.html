@@ -102,6 +102,14 @@
                 <td>310 523 2245</td>
                 <td>maria@gmail.com</td>
                 <td>
+                  <button
+                    type="button"
+                    class="add-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#viewContactModal"
+                  >
+                    <i class="add-button-icon-actions bi bi-eye-fill"></i>
+                  </button>
                   <button class="add-button">
                     <i class="add-button-icon-actions bi bi-pencil-square"></i>
                   </button>
@@ -117,6 +125,14 @@
                 <td>315 400 1132</td>
                 <td>sara@gmail.com</td>
                 <td>
+                  <button
+                    type="button"
+                    class="add-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#viewContactModal"
+                  >
+                    <i class="add-button-icon-actions bi bi-eye-fill"></i>
+                  </button>
                   <button class="add-button">
                     <i class="add-button-icon-actions bi bi-pencil-square"></i>
                   </button>
@@ -132,6 +148,14 @@
                 <td>301 500 1507</td>
                 <td>fernanda@gmail.com</td>
                 <td>
+                  <button
+                    type="button"
+                    class="add-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#viewContactModal"
+                  >
+                    <i class="add-button-icon-actions bi bi-eye-fill"></i>
+                  </button>
                   <button class="add-button">
                     <i class="add-button-icon-actions bi bi-pencil-square"></i>
                   </button>
@@ -159,9 +183,86 @@
       </div>
     </div>
 
-    <!-- Add Contact Modal -->
+    <!-- View Contact Modal -->
+    
+    <div
+      class="modal fade"
+      id="viewContactModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Contact detail</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="contact-form">
+              <div class="contact-photo-container">
+                <img src="img/user.png" alt="contact photo" width="160px" />
+              </div>
+              <div class="contact-info-container">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group mb-3">
+                      <label for="inputName" class="form-label">
+                        Name:
+                      </label>
+                      <input type="text" class="form-control" id="inputName" readonly placeholder="María" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group mb-3">
+                      <label for="inputLastName" class="form-label">
+                        Last name:
+                      </label>
+                      <input type="text" class="form-control" id="inputLastName" readonly placeholder="Pérez"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group mb-3">
+                      <label for="inputPhone" class="form-label">
+                        Phone number:
+                      </label>
+                      <input type="text" class="form-control" id="inputPhone" readonly placeholder="310 523 2245" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group mb-3">
+                      <label for="inputEmail" class="form-label">
+                        Email address:
+                      </label>
+                      <input type="email" class="form-control" id="inputEmail" readonly placeholder="maria@gmail.com"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Modal -->
+    <!-- Add Contact Modal -->
+    
     <div
       class="modal fade"
       id="addContactModal"
@@ -183,7 +284,7 @@
           <div class="modal-body">
             <form class="contact-form">
               <div class="contact-photo-container">
-                <img src="img/user.png" alt="contact photo" width="160px">
+                <img src="img/user.png" alt="contact photo" width="160px" />
               </div>
               <div class="contact-info-container">
                 <div class="row">
@@ -220,7 +321,11 @@
                       <label for="inputEmail" class="form-label">
                         Email address
                       </label>
-                      <input type="email" class="form-control" id="inputEmail" />
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail"
+                      />
                     </div>
                   </div>
                 </div>
