@@ -8,7 +8,7 @@
 /* NavBar */
 
 .navbar {
-  margin: 40px 50px;
+  margin: 30px 50px;
   border-radius: 30px;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
@@ -21,4 +21,19 @@
   display: flex;
   justify-content: center;
   margin-left: -200px
+}
+
+.nav-link {
+  font-size: 14pt !important;
+}
+
+/* main section */
+
+.main-card {
+  width: 800px;
+  min-height: 490px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #f8f9fa;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
