@@ -91,4 +91,16 @@
   .main-card {
     max-width: 90%;
   }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-photo-container {
+    margin-bottom: 15px;
+  }
+
+  .contact-photo-container img {
+    width: 100px;
+  }
 }
